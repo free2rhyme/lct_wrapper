@@ -49,7 +49,7 @@ public:
          const int32_t pageSize,
          Func fn,
          bool& hasMoreRecord,
-         std::size_t* recordFound);
+         std::size_t* recordFound = nullptr);
 
    template <typename Func>
    LCT_ERR_CODE multiQuery(const std::string& keyspace, const std::vector<std::string>& cqlStatements, Func fn);

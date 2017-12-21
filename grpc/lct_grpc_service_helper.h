@@ -70,6 +70,7 @@ public:
 private:
    bool                m_isServing;
    uint16_t            m_servicePort;
+   int32_t             m_selectedPort      = 0;
    int32_t             m_cqNumber          = 1;
    int32_t             m_cqMinPollers      = 1;
    int32_t             m_cqMaxPollers      = std::numeric_limits<int32_t>::max();
