@@ -113,7 +113,7 @@ LCT_ERR_CODE CLctGRpcService<CServiceImpl>::serve(OnPortUpdatedFunc fn)
       LOG_ERROR << ErrCodeFormat(LCT_EXCEPTION) << " e.what(" << e.what() << ")";
       return LCT_EXCEPTION;
    } catch (...) {
-      LOG_ERROR << ErrCodeFormat(IVA_UNEXPECTED);
+      LOG_ERROR << ErrCodeFormat(LCT_UNEXPECTED);
       return LCT_UNEXPECTED;
    }
    return LCT_SUCCESS;
